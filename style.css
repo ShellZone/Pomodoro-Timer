@@ -1,1 +1,19 @@
 * {font-family: 'Rubik', sans-serif;}
+
+
+body{
+    background-color: #272343;
+}
+
+.heading {
+    color: azure;
+}
+
+.timer{
+    color: #fff;
+    text-align: center;
+    width: 20rem;
+    height: 20rem;
+    border: 5px solid #fff;
+    border-radius: 10rem;
+}
