@@ -9,6 +9,10 @@ body{
     color: azure;
 }
 
+.row{
+    width: 100%;
+}
+
 .timer{
     color: #fff;
     text-align: center;
@@ -16,4 +20,22 @@ body{
     height: 20rem;
     border: 5px solid #fff;
     border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.fa-play, .fa-redo-alt {
+    color: azure;
+    border: 2px solid transparent;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.fa-play:hover, .fa-redo-alt:hover{
+    color: thistle;
+    border: 2px solid thistle;
+    transition: 0.3s ease-in;
+    
+}
+
