@@ -2,9 +2,17 @@
 var minutes = 25;
 var seconds = "00";
 
+var click = new Audio("./sounds/pen.mp3");
+var pen = new Audio("./sounds/wood.mp3");
+
 // function to call onload sets innerhtml to the variables
 function template(){
     document.getElementById("minutes").innerHTML = minutes;
     document.getElementById("seconds").innerHTML = seconds;
 }
 
+// click is a variable storing the audio file
+
+function start(){
+    click.play();
+}
