@@ -39,3 +39,11 @@ body{
     
 }
 
+.show_message {
+    display: block;
+    padding: 1rem 0;
+    color: brown;
+    background: crimson;
+    border-radius: 0.5rem;
+    transition: 0.5s ease;
+}
