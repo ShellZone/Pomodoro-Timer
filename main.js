@@ -15,4 +15,12 @@ function template(){
 
 function start(){
     click.play();
+
+    minutes = 24;
+    seconds = 59;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    var minutes_interval = setInterval(minutesTimer, 60000);
+    var seconds_interval = setInterval(minutesTimer, 1000);
 }
