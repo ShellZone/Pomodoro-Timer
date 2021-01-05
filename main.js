@@ -2,6 +2,11 @@
 var minutes = 25;
 var seconds = "00";
 
+let output = document.getElementById('output');
+let quote = 
+    [ "hey","yo"
+];
+
 var click = new Audio("./sounds/pen.mp3");
 var pen = new Audio("./sounds/wood.mp3");
 
@@ -35,8 +40,8 @@ function start(){
 
         // When it hits 0 reset then show the message 
 
-        if(seconds <= 0){
-            if(minutes <= 0){
+        if(seconds <= 57){
+            if(minutes <= 24){
                 // Used Clear interval To stop Time
                 clearInterval(minutes_interval);
                 clearInterval(seconds_interval);
@@ -46,8 +51,12 @@ function start(){
                 document.getElementById("done").classList.add("show_message");
 
                 pen.play(); 
+
+                // Show Quote if Timer hits 0
+                var randomQuote = quote[Math.floor((Math.random()*quote.length))];
+                output.innerHTML = randomQuote;
+
             }
-            seconds = 60
         }
     }
 }
