@@ -35,7 +35,7 @@ function start(){
 
         // When it hits 0 reset then show the message 
 
-        if(seconds <= 0{
+        if(seconds <= 0){
             if(minutes <= 0){
                 // Used Clear interval To stop Time
                 clearInterval(minutes_interval);
